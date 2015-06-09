@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>YumYumDonut Example Page</title>
+
+    <style>
+        body {
+            background-color: #f3f3f3;
+        }
+        #donut1, #donut2 {
+            background-color: white;
+            height: 500px;
+            margin: 50px;
+            width: 500px;
+        }
+    </style>
+
+    <script src="YumYumDonut.js"></script>
+</head>
+<body>
+<div id="donut1"></div>
+<div id="donut2"></div>
+
+<script>
+    var data1 = [
+        {
+            amount: 4,
+            color: 'lightcoral'
+        }
+        ,
+        {
+            amount: 4,
+            color: 'lightblue'
+        }
+        ,
+        {
+            amount: 4,
+            color: 'lightgreen'
+        }
+    ];
+
+    var donut1 = new YumYumDonut('#donut1', data1, {
+        width: 500,
+        height: 500,
+        total: 16,
+        outerRadius: 150,
+        innerRadius: 140,
+        arcPadding: 4
+    });
+
+    console.log(donut1);
+</script>
+</body>
+</html>
